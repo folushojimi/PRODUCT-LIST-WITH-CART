@@ -1,0 +1,489 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:hsl(20, 50%, 98%);
+    margin: 0;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    min-height: 100vh;
+}
+
+
+.overall{
+    margin-top: 50px;
+   display: flex;
+   gap: 5%;
+   justify-content: center;
+}
+
+.all-products > h1{
+    margin-bottom: 30px;
+}
+
+.combined{
+    margin-bottom: 15px;
+}
+ 
+.waffle-img.ikkk{
+    pointer-events: auto;
+    border: 1px solid hsl(14, 86%, 42%);
+}
+
+.kola{
+    border: 2px solid hsl(14, 86%, 42%);
+    height: 204px;
+    width: 204px;
+    border-radius: 7px;
+}
+
+.waffle-img{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    
+    /* position: relative;
+    z-index: 1;
+    object-fit: cover; */
+ }
+
+
+.cart-icon{
+    height: 14px;
+    margin-left: 12px;
+}
+
+.cart-button{
+   
+    font-weight: bold;
+    font-size: 9px;
+    display: flex;
+    gap: 3px;
+    justify-items: center;
+    align-items: center;
+    width: 108px;
+    height: 28px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 15px;
+    /* position: absolute;
+    z-index: 2;    
+    top: 192px;
+    left: 30px; */
+}
+
+.cart-button:hover{
+    cursor: pointer;
+    border: 1px solid hsl(14, 86%, 42%);
+}
+
+.all-text > p{
+font-size: 12px;
+color: grey;
+margin-bottom: 4px;
+}
+
+.all-text > h5{
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+
+.all-text > span{
+    font-size: 12px;
+    font-weight:500;
+    color: hsl(14, 86%, 42%);
+}
+
+.product-list{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* CHECKOUT BOX  AND ALL IT FUNCTIONALITIES*/
+
+/* .empty-cart{
+max-height: 10%;
+max-width: 50%;
+}
+
+.checkout-box{
+    background-color: white;
+    width: 330px;
+    height: 220px;
+    padding-top: 20px;
+    border-radius: 5px;
+}
+
+.inner{
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+.checkout-box > h4{
+    color:hsl(14, 86%, 42%);
+    margin-left: 25px;
+ } 
+
+.inner > p{
+    font-size: 12px;
+    color: rgb(146, 126, 117);
+    font-weight:bold;
+    margin-top: 12px;
+ }
+
+
+ .carbon-delivery{
+    width: 270px;
+    height: 30px;
+    background-color: hsl(20, 50%, 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:25px;
+ }
+
+ .orderbutton{
+    width: 270px;
+    height: 30px;
+    margin-bottom: 300px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 10.30px;
+    background-color: hsl(14, 86%, 42%);
+    margin-left:25px;
+    margin-top: 10px;
+  } */
+
+
+
+  
+  .checkout-box{
+    background-color: white;
+    width: 330px;
+    padding: 10px;
+    border-radius: 5px;
+    padding-bottom: 25px;
+
+}
+
+.inner > p{
+    font-size: 12px;
+    color: rgb(146, 126, 117);
+    font-weight:bold;
+    margin-top: 12px;
+ }
+
+
+
+
+ .heck{
+    margin-left: 25px;
+    margin-top: 10px;
+     
+
+ }
+ .carbon-delivery{
+    width: 270px;
+    height: 33px;
+    background-color: hsl(20, 50%, 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+ }
+
+
+ .carbon-delivery > p{
+    font-size: 10px;
+ }
+
+
+  .orderbutton{
+     padding: 10px;
+     width: 270px;
+     border: none;
+     height: 33px;
+     color: white;
+    font-weight: bold;
+    font-size: 10.30px;
+    border-radius: 20px;
+    background-color: hsl(14, 86%, 42%);
+    margin-top: 16px;
+    cursor: pointer;
+   } 
+
+  .inner{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* THE THE CONFIRM PAYMENT */
+
+ .modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.3);
+    border-color:#fff;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none ;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+ .modal-container.show {
+     pointer-events:outo;
+     opacity: 1;
+ }
+
+ .modal{
+
+    background-color: white;
+    width: 390px;
+    padding: 25px;
+    border-radius: 7px;
+    max-width: 100%;
+ }
+ .order-confirmed{
+    height: 34px;
+    margin-bottom: 8px;
+ }
+
+ .topside > p{
+margin-top: 3px;
+font-size: 13px;
+color: rgb(146, 126, 117);
+margin-bottom: 30px;
+}
+
+  .new-order{
+    padding: 10px;
+    width: 340px;
+    border: none;
+    height: 33px;
+    color: white;
+   font-weight: bold;
+   font-size: 10.30px;
+   border-radius: 20px;
+   background-color: hsl(14, 86%, 42%);
+   cursor: pointer;
+   margin-top: 20px;
+  }
+
+  .order-container{
+    background-color: hsl(20, 50%, 98%);
+    padding: 20px;
+    border-radius: 7px;
+  }
+
+
+  /* THE INCREMENT AND DECREMENT  BUTTON*/
+
+  input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+         -webkit-appearance: none;
+      }
+
+.calc-btn{
+    font-weight: bold;
+    font-size: 9px;
+     gap: 3px;
+    width: 108px;
+    height: 28px;
+    background-color: hsl(14, 86%, 42%);
+    border:none;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+
+.input{
+    text-align: center;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.plus{
+    height: 15px;
+    width: 15px;
+    background-color:hsl(14, 86%, 42%) ;
+    border: 1px solid white;
+    border-radius: 100px;
+    
+}
+
+
+.minus{
+    height: 15px;
+    width: 15px;
+    background-color:hsl(14, 86%, 42%) ;
+    border: 1px solid white;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+
+.inrement-icon{
+  }
+
+
+
+
+
+/* MEDIA QUERY  */
+
+  @media only screen and (max-width:390px){
+    
+    .overall{
+    display: block;
+    margin: 0px;
+
+}
+
+.product-list{
+    display: block;
+    margin: 0px;
+
+}
+
+
+
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.all-products{
+    margin-left: 3.5px;
+}
+
+
+.waffle-img{
+    height: 245px;
+    width: 320px;
+    border-radius: 10px;
+}
+
+.all-text{
+    margin-bottom: 20px;
+}
+
+.cart-button{
+    height:35px ;
+    width: 130px;
+    border-radius: 27px;
+    font-size: 12px;
+}
+
+.cart-icon{
+     height: 16px;
+    margin-left: 15px;
+}
+
+
+
+.checkout-box{
+    padding: 15px;
+    border-radius: 10px;
+ 
+}
+
+
+
+  }
+
+  @media only screen and (max-width:412px){
+
+    .overall{
+        display: block;
+         margin: 0px;
+    
+    }
+    
+    .product-list{
+        display:block;
+        margin: 0px;
+    
+    }
+    
+    
+    
+    body{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    
+    .all-products{
+        margin-left: 3.5px;
+    }
+    
+    
+    .waffle-img{
+        height: 245px;
+        width: 320px;
+        border-radius: 10px;
+    }
+    
+    .all-text{
+        margin-bottom: 20px;
+    }
+    
+    .cart-button{
+        height:35px ;
+        width: 130px;
+        border-radius: 27px;
+        font-size: 12px;
+    }
+    
+    .cart-icon{
+         height: 16px;
+        margin-left: 15px;
+    }
+    
+    
+    .checkout-box{
+        padding: 15px;
+        border-radius: 10px;}
+
+    }
+
+
+  
