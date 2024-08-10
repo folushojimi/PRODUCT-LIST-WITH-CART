@@ -33,7 +33,10 @@ function frameColor(){
 
    div.classList.add('kola')
 
+
 }
+
+
 
 waffleButton.addEventListener('click',frameColor)
 
@@ -42,13 +45,40 @@ waffleButton.addEventListener('click',frameColor)
 
 const input = document.getElementById('input')
 const plus = document.getElementById('plus')
+const minus = document.getElementById('minus')
+
+const emptyElememt = document.getElementById('em')
+
+
+let counterVlaue = 1
+
+
+function displayValue(){
+    input.textContent = counterVlaue  
+}
+
+
 
 function numberADD(){
 
-for (let i = 0; i < 10; i++ ){
-    console.log(i)
-}
+    if (counterVlaue > 0){
+        counterVlaue++
+        displayValue()
+     }
 
 }
 
-plus.addEventListener('click',numberADD)
+ 
+minus.addEventListener('click',numberADD)
+
+
+ 
+// FETCGING FROM JSON FILE
+for (let item of products){
+    output +=
+    
+}
+
+
+
+// html template to output the variable 

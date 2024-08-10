@@ -6,6 +6,7 @@
 }
 
 body{
+    font-family: sans-serif;
     background-color:hsl(20, 50%, 98%);
     margin: 0;
     /* display: flex;
@@ -16,9 +17,9 @@ body{
 
 
 .overall{
-    margin-top: 50px;
+   margin-top: 50px;
    display: flex;
-   gap: 5%;
+   gap: 2%;
    justify-content: center;
 }
 
@@ -44,8 +45,8 @@ body{
 
 .waffle-img{
     height: 200px;
-    width: 200px;
-    border-radius: 5px;
+    width: 210px;
+    border-radius: 4px;
     
     /* position: relative;
     z-index: 1;
@@ -54,20 +55,20 @@ body{
 
 
 .cart-icon{
-    height: 14px;
+    height: 16px;
     margin-left: 12px;
 }
 
 .cart-button{
    
     font-weight: bold;
-    font-size: 9px;
+    font-size: 12px;
     display: flex;
     gap: 3px;
     justify-items: center;
     align-items: center;
-    width: 108px;
-    height: 28px;
+    width: 120px;
+    height: 30px;
     background-color: white;
     border: 1px solid grey;
     border-radius: 15px;
@@ -168,16 +169,32 @@ max-width: 50%;
     margin-top: 10px;
   } */
 
-
+section{
+ 
+}
 
   
+
+
   .checkout-box{
     background-color: white;
-    width: 330px;
+    width: 400px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 4px;
     padding-bottom: 25px;
+    position:;
+}
 
+
+.checkout-box > h4{
+    color: hsl(14, 86%, 42%);
+    font-size:20px;
+    margin-bottom: 17px;
+}
+
+
+.empty-cart{
+display:none;
 }
 
 .inner > p{
@@ -197,8 +214,8 @@ max-width: 50%;
 
  }
  .carbon-delivery{
-    width: 270px;
-    height: 33px;
+    width: 330px;
+    height: 39px;
     background-color: hsl(20, 50%, 98%);
     display: flex;
     justify-content: center;
@@ -208,18 +225,18 @@ max-width: 50%;
 
 
  .carbon-delivery > p{
-    font-size: 10px;
+    font-size: 12px;
  }
 
 
   .orderbutton{
      padding: 10px;
-     width: 270px;
+     width: 330px;
      border: none;
-     height: 33px;
+     height: 39px;
      color: white;
     font-weight: bold;
-    font-size: 10.30px;
+    font-size: 12px;
     border-radius: 20px;
     background-color: hsl(14, 86%, 42%);
     margin-top: 16px;
@@ -261,7 +278,7 @@ max-width: 50%;
  .modal{
 
     background-color: white;
-    width: 390px;
+    width: 400px;
     padding: 25px;
     border-radius: 7px;
     max-width: 100%;
@@ -310,8 +327,8 @@ margin-bottom: 30px;
     font-weight: bold;
     font-size: 9px;
      gap: 3px;
-    width: 108px;
-    height: 28px;
+     width: 120px;
+     height: 30px;
     background-color: hsl(14, 86%, 42%);
     border:none;
     border-radius: 15px;
@@ -329,6 +346,11 @@ margin-bottom: 30px;
     align-items: center;
     justify-content: center;
 
+}
+
+
+.kola{
+    background-color: red;
 }
 
 .plus{
@@ -355,6 +377,62 @@ margin-bottom: 30px;
 
 .inrement-icon{
   }
+
+
+
+/* Styling for checkout item */
+.products{
+border-bottom: 1px solid rgb(128, 128, 128, 0.2);
+padding-top: 17px;
+padding-bottom:17px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 360px;
+padding-left: 5px;
+padding-right: 5px; 
+}
+
+.title{
+
+}
+
+.price-list{
+margin-top: 10px;
+display: flex;
+gap: 10px;
+}
+
+
+.item-number{
+font-weight: bold;
+color: hsl(14, 86%, 42%);
+}
+.price-demo{
+color: grey;
+}
+.calc-price{
+font-weight: 600;
+color: rgb(121, 106, 106);
+}
+
+.cancel-btn{
+width:20px;
+height: 20px;
+border: 1px solid  rgb(144, 125, 125);
+background-color:transparent;
+color: rgb(144, 125, 125);
+border-radius: 100px;
+}
+
+
+.cancel-btn:hover{
+cursor: pointer;
+border: 1px solid  rgb(77, 73, 73);
+font-weight: bold;
+color:  rgb(77, 73, 73);
+
+}
 
 
 
