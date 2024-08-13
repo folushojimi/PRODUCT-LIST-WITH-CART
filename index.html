@@ -6,6 +6,7 @@
     <title>PRODUCT LIST WITH CART</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
+    <script src="data.json"></script>
  </head>
 <body>
     <div class="modal-container" id="modal-container">
@@ -33,12 +34,15 @@
     <!-- //Product 1 -->
     <div class="product1">
 <div class="combined">
-    <div  id="ola"> 
+    <div  id="img-frame1"> 
         <img src="images/image-waffle-desktop.jpg" alt="waffle" class="waffle-img">
     </div>
-    <button class="cart-button" id="waffle">
-    <img src="images/icon-add-to-cart.svg" alt="icon-add-to-cart" class="cart-icon"> <p>Add to Cart</p>
-    </button>
+    <div id="btn-container">
+        <button class="cart-button" id="waffle">
+            <img src="images/icon-add-to-cart.svg" alt="icon-add-to-cart" class="cart-icon"> <p>Add to Cart</p>
+            </button>
+    </div>
+     
 </div>
 <div class="all-text">
     <p>waffle</p>
@@ -194,20 +198,21 @@
     <div class="checkout-box">
         <h4>Your Cart <span>(0)</span></h4> 
 <div class="inner">
-    <div class="products">
-
-        <div  >
+    <ul id="list-of-product"  class="list-of-product"> 
+    <div class="products" id="products">
+        <div>
         <h5 class="title">Classic Tiramisu</h5>   
         <div class="price-list">
-            <span class="item-number">1x</span> 
+            <span class="item-number" id="item-number"></span> 
             <span class="price-demo">@$5.50</span>
-             <span class="calc-price">$10</span>
+             <span class="calc-price" id="calc-price"></span>
         </div>
          </div>
-         <button class="cancel-btn">
+         <button class="cancel-btn" id="remove">
             X
         </button>
     </div>
+</ul>
      <img src="images/illustration-empty-cart.svg" alt="empty-cart" class="empty-cart">
     <p>Your added item will appear here</p>
 </div>
@@ -223,11 +228,17 @@
 
 
  <!--THE INCREMENT AND DECREMENT BUTTON -->
-<div class="calc-btn">
-    <button class="plus"  id="plus"><img src="images/icon-increment-quantity.svg" alt="" class="inrement-icon"></button>
-    <input type="number" class="input" id="input">
-    <button class="minus" id="minus"><img src="images/icon-decrement-quantity.svg" alt="" class='inrement-icon'></button>
+<div class="button-container">
+    <div class="calc-btn" id="calc-btn">
+        <button class="plus"  id="plus"><img src="images/icon-increment-quantity.svg" alt="" class="inrement-icon"></button>
+        <!-- <input type="number" class="input" id="input"> -->
+         <p class="input" id="input"></p>
+        <button class="minus" id="minus"><img src="images/icon-decrement-quantity.svg" alt="" class='inrement-icon'></button>
+    </div>
+
 </div>
+
+ 
 
 <p id="em"></p>
 
@@ -239,21 +250,28 @@
 
 
 <!-- product inside the checkout -->
-<div class="products">
+<!-- <div class="products"  id="product-test">
 
-    <div  >
+    <div >
     <h5 class="title">Classic Tiramisu</h5>   
     <div class="price-list">
         <span class="item-number">1x</span> 
         <span class="price-demo">@$5.50</span>
-         <span class="calc-price">$10</span>
+         <span class="calc-price" id="calc-price">600</span>
     </div>
      </div>
-     <button class="cancel-btn">
+     <button class="cancel-btn"   >
         X
     </button>
-</div>
+</div> -->
+
+<!-- <p id="hello">hello</p> -->
+
 </body>
 </html>
 
  
+
+<div class="products">
+ 
+</div>

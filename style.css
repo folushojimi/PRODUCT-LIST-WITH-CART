@@ -39,7 +39,7 @@ body{
 .kola{
     border: 2px solid hsl(14, 86%, 42%);
     height: 204px;
-    width: 204px;
+    width: 214px;
     border-radius: 7px;
 }
 
@@ -317,13 +317,12 @@ margin-bottom: 30px;
 
 
   /* THE INCREMENT AND DECREMENT  BUTTON*/
+ 
+.button-container{
+    display: none;
+}
 
-  input::-webkit-outer-spin-button,
-      input::-webkit-inner-spin-button {
-         -webkit-appearance: none;
-      }
-
-.calc-btn{
+.calc-btn{  
     font-weight: bold;
     font-size: 9px;
      gap: 3px;
@@ -340,12 +339,10 @@ margin-bottom: 30px;
 
 
 .input{
+    color: #fff;
     text-align: center;
-    width: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    font-size: larger;
+    height: 10px;
 }
 
 
@@ -393,6 +390,10 @@ padding-left: 5px;
 padding-right: 5px; 
 }
 
+ .list-of-product{
+display: none;
+ }
+
 .title{
 
 }
@@ -435,9 +436,7 @@ color:  rgb(77, 73, 73);
 }
 
 
-
-
-
+ 
 /* MEDIA QUERY  */
 
   @media only screen and (max-width:390px){
